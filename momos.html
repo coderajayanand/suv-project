@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Momo Catch 🥟</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="momos.html">🥟 Momo Catch</a>
+    <a href="report-card.html">📋 Report Card</a>
+    <a href="letter.html">💌 Letter</a>
+  </nav>
+
+  <main class="wrap center">
+    <h1>Momo Catch 🥟</h1>
+    <p class="lead">Slide the plate to catch the falling momos. Dodge the homework notebooks!</p>
+
+    <div class="hud">
+      <span>Momos: <b id="score">0</b></span>
+      <span>Time: <b id="time">30</b>s</span>
+    </div>
+
+    <div class="stage" id="stage">
+      <canvas id="game"></canvas>
+
+      <div class="overlay" id="overlay">
+        <h2 id="ovTitle">Ready, <span data-her>Suveccha</span>?</h2>
+        <p id="ovText">Catch at least 12 momos in 30 seconds to unlock a special coupon.</p>
+        <div class="legend" id="legend">
+          <span>🥟 +1</span><span>💗 +3</span><span>📒 −2</span>
+        </div>
+        <div id="couponSlot"></div>
+        <button class="btn" id="startBtn">Start 🥟</button>
+        <p style="margin-top:10px;font-size:.85rem;">Mouse, finger drag, or ← → keys</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>Made with 💗 for <span data-her>Suveccha</span></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/momos.js"></script>
+</body>
+</html>

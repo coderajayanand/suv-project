@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Report Card 📋</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="momos.html">🥟 Momo Catch</a>
+    <a href="report-card.html">📋 Report Card</a>
+    <a href="letter.html">💌 Letter</a>
+  </nav>
+
+  <main class="wrap">
+    <div class="center" style="margin-bottom:22px">
+      <h1>Teacher's Report Card 📋</h1>
+      <p class="lead">She grades everyone else. Today, <span data-her>Suveccha</span> gets graded.</p>
+    </div>
+
+    <section class="card report">
+      <div class="report-head">
+        <small>Annual Evaluation</small>
+        <h2>Name: <span data-her>Suveccha</span></h2>
+        <p>Class: <b>Absolutely Adorable</b> &nbsp;|&nbsp; Roll No: <b>#1</b></p>
+      </div>
+
+      <ul class="subjects" id="subjects">
+        <li class="subject">
+          <button type="button"><span>🌸 Cuteness</span><span class="grade">A+</span></button>
+          <p class="remark">Off the charts. The chart had to be extended twice.</p>
+        </li>
+        <li class="subject">
+          <button type="button"><span>👩‍🏫 Patience with Students</span><span class="grade">A+</span></button>
+          <p class="remark">Saint-level. Honestly, overqualified for it.</p>
+        </li>
+        <li class="subject">
+          <button type="button"><span>😊 Smile</span><span class="grade">A+</span></button>
+          <p class="remark">Dangerous. Causes sudden improvement of bad days.</p>
+        </li>
+        <li class="subject">
+          <button type="button"><span>🥟 Momo Appetite</span><span class="grade">A+</span></button>
+          <p class="remark">Serious dedication. Respect. Needs more chutney.</p>
+        </li>
+        <li class="subject">
+          <button type="button"><span>🙄 Surviving Staff-room Politics</span><span class="grade">A+</span></button>
+          <p class="remark">Passed with flying eye-rolls. (Allowed, and understood.)</p>
+        </li>
+        <li class="subject">
+          <button type="button"><span>💗 Making People Feel Better</span><span class="grade">A+</span></button>
+          <p class="remark">Straight A's, and she doesn't even realise she's doing it.</p>
+        </li>
+      </ul>
+      <p class="hint">Tap any subject to read the teacher's remark</p>
+
+      <div class="teacher-remarks">
+        <h3>Overall Remarks</h3>
+        <p>Needs to rest more, worry less, and eat more momos. Highly recommended: laughing without checking the time. Promoted to: <b>"Today's problem is over."</b></p>
+        <div class="stamp" id="stamp">APPROVED ✓</div>
+      </div>
+
+      <p class="sign">~ Principal of the Suveccha Fan Club</p>
+    </section>
+
+    <div class="center" style="margin-top:26px">
+      <button class="btn" id="reevalBtn">Request re-evaluation 🧐</button>
+      <p class="cheer-msg" id="reevalMsg" style="margin-top:10px"></p>
+    </div>
+  </main>
+
+  <footer>Made with 💗 for <span data-her>Suveccha</span></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/report.js"></script>
+</body>
+</html>

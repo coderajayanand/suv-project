@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A Letter 💌</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥟</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div id="hearts"></div>
+
+  <nav class="nav">
+    <a href="index.html">🏠 Home</a>
+    <a href="momos.html">🥟 Momo Catch</a>
+    <a href="report-card.html">📋 Report Card</a>
+    <a href="letter.html">💌 Letter</a>
+  </nav>
+
+  <main class="wrap">
+    <div class="center">
+      <h1>A little letter 💌</h1>
+      <p class="lead" id="envHint">Tap the envelope. It's for <span data-her>Suveccha</span>.</p>
+    </div>
+
+    <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open the letter">
+      <div class="body"></div>
+      <div class="flap"></div>
+      <div class="seal">💗</div>
+    </div>
+
+    <article class="letter" id="letter"></article>
+
+    <section class="section" id="openWhenSection" style="display:none">
+      <h2 class="center">Open when… 💕</h2>
+      <p class="lead center">Little notes, for different kinds of moments. Tap one.</p>
+      <div class="mini-grid" id="miniGrid"></div>
+    </section>
+
+    <div class="center section" id="replyRow" style="display:none">
+      <button class="btn" id="hugBack">Send a hug back 🤗</button>
+    </div>
+  </main>
+
+  <footer>Made with 💗 for <span data-her>Suveccha</span></footer>
+
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/letter.js"></script>
+</body>
+</html>
